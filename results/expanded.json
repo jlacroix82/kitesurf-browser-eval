@@ -1,0 +1,1404 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-14T19:33:17.448Z",
+  "upstream_revision": "4a2903813a22b08d4f3cc64a4b35339d0293a5d1",
+  "environment": {
+    "platform": "linux",
+    "arch": "arm64",
+    "node": "v26.5.0",
+    "puppeteer": "25.17.0"
+  },
+  "method": {
+    "rounds": 2,
+    "wait_until": "domcontentloaded",
+    "settle_ms": 700,
+    "navigation_timeout_ms": 20000,
+    "case_timeout_note": "protocol calls limited to 20s; runner should also be externally bounded",
+    "fresh_page_per_case": true,
+    "order": "alternating engine first each round; identical case order",
+    "timing": "page creation through extraction and assertions; screenshots separately",
+    "quality": "predeclared marker recall + structural extraction; not semantic answer quality; failed/error cases retained"
+  },
+  "rows": [
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "fixture",
+      "url": null,
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "READY",
+        "Hello Ada",
+        "ASYNC_DONE",
+        "Orchid",
+        "17",
+        "Cedar",
+        "29",
+        "quality-fixture",
+        "violet-42"
+      ],
+      "title": "Evaluation fixture",
+      "text_chars": 197,
+      "main_chars": 180,
+      "text_sha256": "aac728141ec11581d7d751c315eb1c3ded5328e697c1ca14130f4ef2a515cfa9",
+      "marker_results": [
+        {
+          "marker": "READY",
+          "found": true
+        },
+        {
+          "marker": "Hello Ada",
+          "found": true
+        },
+        {
+          "marker": "ASYNC_DONE",
+          "found": true
+        },
+        {
+          "marker": "Orchid",
+          "found": true
+        },
+        {
+          "marker": "17",
+          "found": true
+        },
+        {
+          "marker": "Cedar",
+          "found": true
+        },
+        {
+          "marker": "29",
+          "found": true
+        },
+        {
+          "marker": "quality-fixture",
+          "found": true
+        },
+        {
+          "marker": "violet-42",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 2,
+      "tables": 1,
+      "code_blocks": 1,
+      "links": 1,
+      "challenge_hint": false,
+      "fixture_checks": {
+        "heading": true,
+        "table": true,
+        "code": true,
+        "link": true,
+        "interaction": true,
+        "expanded": true,
+        "async": true
+      },
+      "fixture_pass": true,
+      "elapsed_ms": 1459
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "python",
+      "url": "https://docs.python.org/3/library/json.html",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "json.dumps",
+        "json.loads",
+        "JSONDecodeError"
+      ],
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/json.html",
+      "title": "json — JSON encoder and decoder — Python 3.15.2 documentation",
+      "text_chars": 27429,
+      "main_chars": 25292,
+      "text_sha256": "4e7553060162ae53ab390cb8f5972411ae1f914d752216ca2b1d49e516b125df",
+      "marker_results": [
+        {
+          "marker": "json.dumps",
+          "found": true
+        },
+        {
+          "marker": "json.loads",
+          "found": true
+        },
+        {
+          "marker": "JSONDecodeError",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 18,
+      "tables": 2,
+      "code_blocks": 15,
+      "links": 219,
+      "challenge_hint": false,
+      "elapsed_ms": 2394
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "github",
+      "url": "https://github.com/cloudflare/kitesurf",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "Kitesurf",
+        "pnpm",
+        "CDP"
+      ],
+      "http_status": 200,
+      "final_url": "https://github.com/cloudflare/kitesurf",
+      "title": "GitHub - cloudflare/kitesurf: Kitesurf is an experimental browser engine that runs on Cloudflare Workers. · GitHub",
+      "text_chars": 17002,
+      "main_chars": 16745,
+      "text_sha256": "6d06a3b9f0a49de23bc336695ff5018d60460ab469e01b7c2c7d22957b61ceab",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "pnpm",
+          "found": true
+        },
+        {
+          "marker": "CDP",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 41,
+      "tables": 2,
+      "code_blocks": 12,
+      "links": 288,
+      "challenge_hint": false,
+      "elapsed_ms": 5539
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "cloudflare",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "Kitesurf",
+        "browser",
+        "JavaScript"
+      ],
+      "http_status": 200,
+      "final_url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "title": "Kitesurf is now open source | Cloudflare Blog",
+      "text_chars": 6879,
+      "main_chars": 6019,
+      "text_sha256": "77292aec7e4326728da5f9af95198bc9c53ad1d16c75f612ea06be7639ee8c20",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "browser",
+          "found": true
+        },
+        {
+          "marker": "JavaScript",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 19,
+      "tables": 0,
+      "code_blocks": 3,
+      "links": 1023,
+      "challenge_hint": false,
+      "elapsed_ms": 3419
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "arxiv",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "Attention Is All You Need",
+        "Vaswani",
+        "Transformer"
+      ],
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "title": "[1706.03762] Attention Is All You Need",
+      "text_chars": 3167,
+      "main_chars": 2904,
+      "text_sha256": "cd7ef87e89490a477cf2d43fb18586956affa09ddb65beec84e2e6ac28ca497f",
+      "marker_results": [
+        {
+          "marker": "Attention Is All You Need",
+          "found": true
+        },
+        {
+          "marker": "Vaswani",
+          "found": true
+        },
+        {
+          "marker": "Transformer",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 16,
+      "tables": 1,
+      "code_blocks": 0,
+      "links": 85,
+      "challenge_hint": false,
+      "elapsed_ms": 2870
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JSON",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "JavaScript Object Notation",
+        "Douglas Crockford",
+        "application/json"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/JSON",
+      "title": "JSON - Wikipedia",
+      "text_chars": 38270,
+      "main_chars": 37306,
+      "text_sha256": "b533f8553b9330cdb8521398a541971afd9292db030bc0651e2abfc2bb54cac7",
+      "marker_results": [
+        {
+          "marker": "JavaScript Object Notation",
+          "found": true
+        },
+        {
+          "marker": "Douglas Crockford",
+          "found": true
+        },
+        {
+          "marker": "application/json",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 23,
+      "tables": 7,
+      "code_blocks": 3,
+      "links": 1370,
+      "challenge_hint": false,
+      "elapsed_ms": 3816
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "mdn",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "querySelector",
+        "SyntaxError",
+        "Element"
+      ],
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "title": "Document: querySelector() method - Web APIs | MDN",
+      "text_chars": 9951,
+      "main_chars": 4687,
+      "text_sha256": "b648196727d5d5be025ef6711371ff28be4e830786d3e5648ddf295893ccb32b",
+      "marker_results": [
+        {
+          "marker": "querySelector",
+          "found": true
+        },
+        {
+          "marker": "SyntaxError",
+          "found": true
+        },
+        {
+          "marker": "Element",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 15,
+      "tables": 1,
+      "code_blocks": 3,
+      "links": 363,
+      "challenge_hint": false,
+      "elapsed_ms": 3020
+    },
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "nvidia",
+      "url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "veloGB10",
+        "prefill"
+      ],
+      "http_status": 200,
+      "final_url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "title": "veloGB10 v0.7.0 RELEASE - Qwen3.8-Flash-Next TP=2 @ 186 tok/sec , SINGLE at 137 tok/sec on code - #80 by stav_kats - DGX Spark / GB10 Projects - NVIDIA Developer Forums",
+      "text_chars": 120,
+      "main_chars": 0,
+      "text_sha256": "34e0fec4b7e800a9caf8d622e61bd56f5fb624da593bd3a3a87d40c3780b1b3d",
+      "marker_results": [
+        {
+          "marker": "veloGB10",
+          "found": false
+        },
+        {
+          "marker": "prefill",
+          "found": false
+        }
+      ],
+      "all_markers": false,
+      "headings": 0,
+      "tables": 0,
+      "code_blocks": 0,
+      "links": 2,
+      "challenge_hint": false,
+      "elapsed_ms": 5524
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "fixture",
+      "url": null,
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "READY",
+        "Hello Ada",
+        "ASYNC_DONE",
+        "Orchid",
+        "17",
+        "Cedar",
+        "29",
+        "quality-fixture",
+        "violet-42"
+      ],
+      "title": "Evaluation fixture",
+      "text_chars": 198,
+      "main_chars": 181,
+      "text_sha256": "5145cdc995f80bd1daa506c519c1ae8157a9d9fd7c3ccc430793cbe50209f9f6",
+      "marker_results": [
+        {
+          "marker": "READY",
+          "found": true
+        },
+        {
+          "marker": "Hello Ada",
+          "found": true
+        },
+        {
+          "marker": "ASYNC_DONE",
+          "found": true
+        },
+        {
+          "marker": "Orchid",
+          "found": true
+        },
+        {
+          "marker": "17",
+          "found": true
+        },
+        {
+          "marker": "Cedar",
+          "found": true
+        },
+        {
+          "marker": "29",
+          "found": true
+        },
+        {
+          "marker": "quality-fixture",
+          "found": true
+        },
+        {
+          "marker": "violet-42",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 2,
+      "tables": 1,
+      "code_blocks": 1,
+      "links": 1,
+      "challenge_hint": false,
+      "fixture_checks": {
+        "heading": true,
+        "table": true,
+        "code": true,
+        "link": true,
+        "interaction": true,
+        "expanded": true,
+        "async": true
+      },
+      "fixture_pass": true,
+      "elapsed_ms": 959
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "python",
+      "url": "https://docs.python.org/3/library/json.html",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "json.dumps",
+        "json.loads",
+        "JSONDecodeError"
+      ],
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/json.html",
+      "title": "json — JSON encoder and decoder — Python 3.15.2 documentation",
+      "text_chars": 27461,
+      "main_chars": 25316,
+      "text_sha256": "a94c04cfdfc0d7e1ad1f4341a853b5eb94ba73c617c77bf3ae1e12f75a42d5fe",
+      "marker_results": [
+        {
+          "marker": "json.dumps",
+          "found": true
+        },
+        {
+          "marker": "json.loads",
+          "found": true
+        },
+        {
+          "marker": "JSONDecodeError",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 18,
+      "tables": 2,
+      "code_blocks": 15,
+      "links": 219,
+      "challenge_hint": false,
+      "elapsed_ms": 1154
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "github",
+      "url": "https://github.com/cloudflare/kitesurf",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "Kitesurf",
+        "pnpm",
+        "CDP"
+      ],
+      "http_status": 200,
+      "final_url": "https://github.com/cloudflare/kitesurf",
+      "title": "GitHub - cloudflare/kitesurf: Kitesurf is an experimental browser engine that runs on Cloudflare Workers. · GitHub",
+      "text_chars": 16551,
+      "main_chars": 16295,
+      "text_sha256": "4c651be61267e54bfc934c6524557c3b6a728c45291de3a20b3a7d6730baef10",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "pnpm",
+          "found": true
+        },
+        {
+          "marker": "CDP",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 41,
+      "tables": 2,
+      "code_blocks": 12,
+      "links": 288,
+      "challenge_hint": false,
+      "elapsed_ms": 2366
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "cloudflare",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "Kitesurf",
+        "browser",
+        "JavaScript"
+      ],
+      "http_status": 200,
+      "final_url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "title": "Kitesurf is now open source | Cloudflare Blog",
+      "text_chars": 6886,
+      "main_chars": 6026,
+      "text_sha256": "84256952a9ab15464178249a016705767f4e6be6cda1a1be3dadf5ceeb078611",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "browser",
+          "found": true
+        },
+        {
+          "marker": "JavaScript",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 19,
+      "tables": 0,
+      "code_blocks": 3,
+      "links": 1023,
+      "challenge_hint": false,
+      "elapsed_ms": 1340
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "arxiv",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "Attention Is All You Need",
+        "Vaswani",
+        "Transformer"
+      ],
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "title": "[1706.03762] Attention Is All You Need",
+      "text_chars": 3169,
+      "main_chars": 2906,
+      "text_sha256": "44cf16dd8d053ffb21659ed38cd5bfbd97359a58860c70ab70dd7b5461dc114d",
+      "marker_results": [
+        {
+          "marker": "Attention Is All You Need",
+          "found": true
+        },
+        {
+          "marker": "Vaswani",
+          "found": true
+        },
+        {
+          "marker": "Transformer",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 16,
+      "tables": 1,
+      "code_blocks": 0,
+      "links": 85,
+      "challenge_hint": false,
+      "elapsed_ms": 1141
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JSON",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "JavaScript Object Notation",
+        "Douglas Crockford",
+        "application/json"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/JSON",
+      "title": "JSON - Wikipedia",
+      "text_chars": 36521,
+      "main_chars": 33743,
+      "text_sha256": "f0a789e9855b6c8a23f0c5b49189f9abaed4899126f627e7baa91c285e0783bf",
+      "marker_results": [
+        {
+          "marker": "JavaScript Object Notation",
+          "found": true
+        },
+        {
+          "marker": "Douglas Crockford",
+          "found": true
+        },
+        {
+          "marker": "application/json",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 23,
+      "tables": 7,
+      "code_blocks": 3,
+      "links": 1411,
+      "challenge_hint": false,
+      "elapsed_ms": 1228
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "mdn",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "querySelector",
+        "SyntaxError",
+        "Element"
+      ],
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "title": "Document: querySelector() method - Web APIs | MDN",
+      "text_chars": 7226,
+      "main_chars": 3622,
+      "text_sha256": "7f0948ccbc2a957310052cdab9541e611f657263a7f95d15537ab6a8d7a25a6c",
+      "marker_results": [
+        {
+          "marker": "querySelector",
+          "found": true
+        },
+        {
+          "marker": "SyntaxError",
+          "found": true
+        },
+        {
+          "marker": "Element",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 15,
+      "tables": 1,
+      "code_blocks": 0,
+      "links": 363,
+      "challenge_hint": false,
+      "elapsed_ms": 1238
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "nvidia",
+      "url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "veloGB10",
+        "prefill"
+      ],
+      "http_status": 200,
+      "final_url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "title": "veloGB10 v0.7.0 RELEASE - Qwen3.8-Flash-Next TP=2 @ 186 tok/sec , SINGLE at 137 tok/sec on code - DGX Spark / GB10 User Forum / DGX Spark / GB10 Projects - NVIDIA Developer Forums",
+      "text_chars": 22840,
+      "main_chars": 22426,
+      "text_sha256": "1bd72a43aee26042de1eb3dd7623fe75bacffcdb56bbf1a2d5d5c49668daa0d0",
+      "marker_results": [
+        {
+          "marker": "veloGB10",
+          "found": true
+        },
+        {
+          "marker": "prefill",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 34,
+      "tables": 8,
+      "code_blocks": 3,
+      "links": 131,
+      "challenge_hint": false,
+      "elapsed_ms": 2979
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "fixture",
+      "url": null,
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "READY",
+        "Hello Ada",
+        "ASYNC_DONE",
+        "Orchid",
+        "17",
+        "Cedar",
+        "29",
+        "quality-fixture",
+        "violet-42"
+      ],
+      "title": "Evaluation fixture",
+      "text_chars": 198,
+      "main_chars": 181,
+      "text_sha256": "5145cdc995f80bd1daa506c519c1ae8157a9d9fd7c3ccc430793cbe50209f9f6",
+      "marker_results": [
+        {
+          "marker": "READY",
+          "found": true
+        },
+        {
+          "marker": "Hello Ada",
+          "found": true
+        },
+        {
+          "marker": "ASYNC_DONE",
+          "found": true
+        },
+        {
+          "marker": "Orchid",
+          "found": true
+        },
+        {
+          "marker": "17",
+          "found": true
+        },
+        {
+          "marker": "Cedar",
+          "found": true
+        },
+        {
+          "marker": "29",
+          "found": true
+        },
+        {
+          "marker": "quality-fixture",
+          "found": true
+        },
+        {
+          "marker": "violet-42",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 2,
+      "tables": 1,
+      "code_blocks": 1,
+      "links": 1,
+      "challenge_hint": false,
+      "fixture_checks": {
+        "heading": true,
+        "table": true,
+        "code": true,
+        "link": true,
+        "interaction": true,
+        "expanded": true,
+        "async": true
+      },
+      "fixture_pass": true,
+      "elapsed_ms": 961
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "python",
+      "url": "https://docs.python.org/3/library/json.html",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "json.dumps",
+        "json.loads",
+        "JSONDecodeError"
+      ],
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/json.html",
+      "title": "json — JSON encoder and decoder — Python 3.15.2 documentation",
+      "text_chars": 27461,
+      "main_chars": 25316,
+      "text_sha256": "a94c04cfdfc0d7e1ad1f4341a853b5eb94ba73c617c77bf3ae1e12f75a42d5fe",
+      "marker_results": [
+        {
+          "marker": "json.dumps",
+          "found": true
+        },
+        {
+          "marker": "json.loads",
+          "found": true
+        },
+        {
+          "marker": "JSONDecodeError",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 18,
+      "tables": 2,
+      "code_blocks": 15,
+      "links": 219,
+      "challenge_hint": false,
+      "elapsed_ms": 1151
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "github",
+      "url": "https://github.com/cloudflare/kitesurf",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "Kitesurf",
+        "pnpm",
+        "CDP"
+      ],
+      "http_status": 200,
+      "final_url": "https://github.com/cloudflare/kitesurf",
+      "title": "GitHub - cloudflare/kitesurf: Kitesurf is an experimental browser engine that runs on Cloudflare Workers. · GitHub",
+      "text_chars": 16551,
+      "main_chars": 16295,
+      "text_sha256": "4c651be61267e54bfc934c6524557c3b6a728c45291de3a20b3a7d6730baef10",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "pnpm",
+          "found": true
+        },
+        {
+          "marker": "CDP",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 41,
+      "tables": 2,
+      "code_blocks": 12,
+      "links": 288,
+      "challenge_hint": false,
+      "elapsed_ms": 3505
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "cloudflare",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "Kitesurf",
+        "browser",
+        "JavaScript"
+      ],
+      "http_status": 200,
+      "final_url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "title": "Kitesurf is now open source | Cloudflare Blog",
+      "text_chars": 6886,
+      "main_chars": 6026,
+      "text_sha256": "84256952a9ab15464178249a016705767f4e6be6cda1a1be3dadf5ceeb078611",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "browser",
+          "found": true
+        },
+        {
+          "marker": "JavaScript",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 19,
+      "tables": 0,
+      "code_blocks": 3,
+      "links": 1023,
+      "challenge_hint": false,
+      "elapsed_ms": 1082
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "arxiv",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "Attention Is All You Need",
+        "Vaswani",
+        "Transformer"
+      ],
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "title": "[1706.03762] Attention Is All You Need",
+      "text_chars": 3169,
+      "main_chars": 2906,
+      "text_sha256": "44cf16dd8d053ffb21659ed38cd5bfbd97359a58860c70ab70dd7b5461dc114d",
+      "marker_results": [
+        {
+          "marker": "Attention Is All You Need",
+          "found": true
+        },
+        {
+          "marker": "Vaswani",
+          "found": true
+        },
+        {
+          "marker": "Transformer",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 16,
+      "tables": 1,
+      "code_blocks": 0,
+      "links": 85,
+      "challenge_hint": false,
+      "elapsed_ms": 1792
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JSON",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "JavaScript Object Notation",
+        "Douglas Crockford",
+        "application/json"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/JSON",
+      "title": "JSON - Wikipedia",
+      "text_chars": 34701,
+      "main_chars": 33743,
+      "text_sha256": "842a717e949a262f978dd39ce0bd6eae333a2df210ea25a77ced9fc8e1f36128",
+      "marker_results": [
+        {
+          "marker": "JavaScript Object Notation",
+          "found": true
+        },
+        {
+          "marker": "Douglas Crockford",
+          "found": true
+        },
+        {
+          "marker": "application/json",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 23,
+      "tables": 7,
+      "code_blocks": 3,
+      "links": 1372,
+      "challenge_hint": false,
+      "elapsed_ms": 1291
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "mdn",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "querySelector",
+        "SyntaxError",
+        "Element"
+      ],
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "title": "Document: querySelector() method - Web APIs | MDN",
+      "text_chars": 7226,
+      "main_chars": 3622,
+      "text_sha256": "7f0948ccbc2a957310052cdab9541e611f657263a7f95d15537ab6a8d7a25a6c",
+      "marker_results": [
+        {
+          "marker": "querySelector",
+          "found": true
+        },
+        {
+          "marker": "SyntaxError",
+          "found": true
+        },
+        {
+          "marker": "Element",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 15,
+      "tables": 1,
+      "code_blocks": 0,
+      "links": 363,
+      "challenge_hint": false,
+      "elapsed_ms": 1377
+    },
+    {
+      "engine": "chromium",
+      "round": 2,
+      "case": "nvidia",
+      "url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "veloGB10",
+        "prefill"
+      ],
+      "http_status": 200,
+      "final_url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "title": "veloGB10 v0.7.0 RELEASE - Qwen3.8-Flash-Next TP=2 @ 186 tok/sec , SINGLE at 137 tok/sec on code - DGX Spark / GB10 User Forum / DGX Spark / GB10 Projects - NVIDIA Developer Forums",
+      "text_chars": 22840,
+      "main_chars": 22426,
+      "text_sha256": "1bd72a43aee26042de1eb3dd7623fe75bacffcdb56bbf1a2d5d5c49668daa0d0",
+      "marker_results": [
+        {
+          "marker": "veloGB10",
+          "found": true
+        },
+        {
+          "marker": "prefill",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 34,
+      "tables": 8,
+      "code_blocks": 3,
+      "links": 131,
+      "challenge_hint": false,
+      "elapsed_ms": 2579
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "fixture",
+      "url": null,
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "READY",
+        "Hello Ada",
+        "ASYNC_DONE",
+        "Orchid",
+        "17",
+        "Cedar",
+        "29",
+        "quality-fixture",
+        "violet-42"
+      ],
+      "title": "Evaluation fixture",
+      "text_chars": 197,
+      "main_chars": 180,
+      "text_sha256": "aac728141ec11581d7d751c315eb1c3ded5328e697c1ca14130f4ef2a515cfa9",
+      "marker_results": [
+        {
+          "marker": "READY",
+          "found": true
+        },
+        {
+          "marker": "Hello Ada",
+          "found": true
+        },
+        {
+          "marker": "ASYNC_DONE",
+          "found": true
+        },
+        {
+          "marker": "Orchid",
+          "found": true
+        },
+        {
+          "marker": "17",
+          "found": true
+        },
+        {
+          "marker": "Cedar",
+          "found": true
+        },
+        {
+          "marker": "29",
+          "found": true
+        },
+        {
+          "marker": "quality-fixture",
+          "found": true
+        },
+        {
+          "marker": "violet-42",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 2,
+      "tables": 1,
+      "code_blocks": 1,
+      "links": 1,
+      "challenge_hint": false,
+      "fixture_checks": {
+        "heading": true,
+        "table": true,
+        "code": true,
+        "link": true,
+        "interaction": true,
+        "expanded": true,
+        "async": true
+      },
+      "fixture_pass": true,
+      "elapsed_ms": 1277
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "python",
+      "url": "https://docs.python.org/3/library/json.html",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "json.dumps",
+        "json.loads",
+        "JSONDecodeError"
+      ],
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/json.html",
+      "title": "json — JSON encoder and decoder — Python 3.15.2 documentation",
+      "text_chars": 27429,
+      "main_chars": 25292,
+      "text_sha256": "4e7553060162ae53ab390cb8f5972411ae1f914d752216ca2b1d49e516b125df",
+      "marker_results": [
+        {
+          "marker": "json.dumps",
+          "found": true
+        },
+        {
+          "marker": "json.loads",
+          "found": true
+        },
+        {
+          "marker": "JSONDecodeError",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 18,
+      "tables": 2,
+      "code_blocks": 15,
+      "links": 219,
+      "challenge_hint": false,
+      "elapsed_ms": 2369
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "github",
+      "url": "https://github.com/cloudflare/kitesurf",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "Kitesurf",
+        "pnpm",
+        "CDP"
+      ],
+      "http_status": 200,
+      "final_url": "https://github.com/cloudflare/kitesurf",
+      "title": "GitHub - cloudflare/kitesurf: Kitesurf is an experimental browser engine that runs on Cloudflare Workers. · GitHub",
+      "text_chars": 17002,
+      "main_chars": 16745,
+      "text_sha256": "a518ff4b8d0cae6dad40749533761d582d42f8ac20176012eec8c6701b6a203a",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "pnpm",
+          "found": true
+        },
+        {
+          "marker": "CDP",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 41,
+      "tables": 2,
+      "code_blocks": 12,
+      "links": 288,
+      "challenge_hint": false,
+      "elapsed_ms": 5009
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "cloudflare",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "Kitesurf",
+        "browser",
+        "JavaScript"
+      ],
+      "http_status": 200,
+      "final_url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "title": "Kitesurf is now open source | Cloudflare Blog",
+      "text_chars": 6879,
+      "main_chars": 6019,
+      "text_sha256": "77292aec7e4326728da5f9af95198bc9c53ad1d16c75f612ea06be7639ee8c20",
+      "marker_results": [
+        {
+          "marker": "Kitesurf",
+          "found": true
+        },
+        {
+          "marker": "browser",
+          "found": true
+        },
+        {
+          "marker": "JavaScript",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 19,
+      "tables": 0,
+      "code_blocks": 3,
+      "links": 1023,
+      "challenge_hint": false,
+      "elapsed_ms": 2886
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "arxiv",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "Attention Is All You Need",
+        "Vaswani",
+        "Transformer"
+      ],
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "title": "[1706.03762] Attention Is All You Need",
+      "text_chars": 3167,
+      "main_chars": 2904,
+      "text_sha256": "cd7ef87e89490a477cf2d43fb18586956affa09ddb65beec84e2e6ac28ca497f",
+      "marker_results": [
+        {
+          "marker": "Attention Is All You Need",
+          "found": true
+        },
+        {
+          "marker": "Vaswani",
+          "found": true
+        },
+        {
+          "marker": "Transformer",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 16,
+      "tables": 1,
+      "code_blocks": 0,
+      "links": 85,
+      "challenge_hint": false,
+      "elapsed_ms": 3128
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JSON",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "JavaScript Object Notation",
+        "Douglas Crockford",
+        "application/json"
+      ],
+      "http_status": 200,
+      "final_url": "https://en.wikipedia.org/wiki/JSON",
+      "title": "JSON - Wikipedia",
+      "text_chars": 38067,
+      "main_chars": 37103,
+      "text_sha256": "8f11b8870a0580bcc46fcd1aaca26f3a24e5460b0939d89605937c59fcae0bb3",
+      "marker_results": [
+        {
+          "marker": "JavaScript Object Notation",
+          "found": true
+        },
+        {
+          "marker": "Douglas Crockford",
+          "found": true
+        },
+        {
+          "marker": "application/json",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 23,
+      "tables": 7,
+      "code_blocks": 3,
+      "links": 1368,
+      "challenge_hint": false,
+      "elapsed_ms": 3998
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "mdn",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "querySelector",
+        "SyntaxError",
+        "Element"
+      ],
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
+      "title": "Document: querySelector() method - Web APIs | MDN",
+      "text_chars": 9951,
+      "main_chars": 4687,
+      "text_sha256": "b648196727d5d5be025ef6711371ff28be4e830786d3e5648ddf295893ccb32b",
+      "marker_results": [
+        {
+          "marker": "querySelector",
+          "found": true
+        },
+        {
+          "marker": "SyntaxError",
+          "found": true
+        },
+        {
+          "marker": "Element",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 15,
+      "tables": 1,
+      "code_blocks": 3,
+      "links": 363,
+      "challenge_hint": false,
+      "elapsed_ms": 3306
+    },
+    {
+      "engine": "kitesurf",
+      "round": 2,
+      "case": "nvidia",
+      "url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "veloGB10",
+        "prefill"
+      ],
+      "http_status": 200,
+      "final_url": "https://forums.developer.nvidia.com/t/velogb10-v0-7-0-release-qwen3-8-flash-next-tp-2-186-tok-sec-single-at-137-tok-sec-on-code/384765/80",
+      "title": "veloGB10 v0.7.0 RELEASE - Qwen3.8-Flash-Next TP=2 @ 186 tok/sec , SINGLE at 137 tok/sec on code - #80 by stav_kats - DGX Spark / GB10 Projects - NVIDIA Developer Forums",
+      "text_chars": 120,
+      "main_chars": 0,
+      "text_sha256": "34e0fec4b7e800a9caf8d622e61bd56f5fb624da593bd3a3a87d40c3780b1b3d",
+      "marker_results": [
+        {
+          "marker": "veloGB10",
+          "found": false
+        },
+        {
+          "marker": "prefill",
+          "found": false
+        }
+      ],
+      "all_markers": false,
+      "headings": 0,
+      "tables": 0,
+      "code_blocks": 0,
+      "links": 2,
+      "challenge_hint": false,
+      "elapsed_ms": 4809
+    }
+  ]
+}

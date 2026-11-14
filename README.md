@@ -45,4 +45,8 @@ A successful HTTP response is not successful content access. Marker matches are 
 
 ## Status
 
-Preliminary smoke complete. Expanded access/quality evaluation pending at initial publication. No process-tree RSS measurements yet. Existing production browser unchanged.
+Expanded screen complete: **32 observations**, with two rounds across seven public pages plus an interactive fixture. Chromium passed public-page markers in 14/14 attempts; Kitesurf passed 12/14, returning an unsupported-browser notice on the NVIDIA forum. Both passed all fixture checks twice. See [FINDINGS.md](FINDINGS.md), including a shadow-DOM follow-up that explains why longer extracted text is not necessarily higher quality.
+
+Recompute counts with `python3 scripts/summarize.py`. Optional diagnostics: `node scripts/forum-followup.cjs` (KITESURF_WS) and `node scripts/mdn-followup.cjs` (both browser environment variables); run after the primary harness creates artifacts directories. These follow-ups do not retroactively change the primary marker scores.
+
+No process-tree RSS measurements yet. Existing production browser unchanged. Preliminary upstream report: https://github.com/cloudflare/kitesurf/issues/132 .

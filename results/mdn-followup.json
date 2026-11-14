@@ -1,0 +1,31 @@
+{
+  "note": "Exploratory follow-up, not part of predeclared primary scores. Five-second settle; traverses open shadow roots for pre elements.",
+  "rows": [
+    {
+      "engine": "kitesurf",
+      "light_pre_count": 3,
+      "deep_pre_count": 7,
+      "shadow_roots": 61,
+      "deep_code_chars": 1289,
+      "deep_contains_css_escape": true,
+      "body_contains_css_escape": true,
+      "body_chars": 9951,
+      "light_code_block_chars": [
+        191,
+        85,
+        774
+      ]
+    },
+    {
+      "engine": "chromium",
+      "light_pre_count": 0,
+      "deep_pre_count": 7,
+      "shadow_roots": 73,
+      "deep_code_chars": 1289,
+      "deep_contains_css_escape": true,
+      "body_contains_css_escape": true,
+      "body_chars": 7226,
+      "light_code_block_chars": []
+    }
+  ]
+}

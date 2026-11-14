@@ -1,0 +1,27 @@
+{
+  "http_status": 403,
+  "note": "Separate follow-up; samples at 0, 5, and 10 seconds after DOMContentLoaded. No UA override or bypass attempted.",
+  "samples": [
+    {
+      "additional_wait_ms": 0,
+      "title": "Checking your browser...",
+      "text_chars": 35,
+      "notice": null,
+      "unsupported": false
+    },
+    {
+      "additional_wait_ms": 5000,
+      "title": "veloGB10 v0.7.0 RELEASE - Qwen3.8-Flash-Next TP=2 @ 186 tok/sec , SINGLE at 137 tok/sec on code - #80 by stav_kats - DGX Spark / GB10 Projects - NVIDIA Developer Forums",
+      "text_chars": 120,
+      "notice": "Unfortunately, your browser is unsupported.",
+      "unsupported": true
+    },
+    {
+      "additional_wait_ms": 5000,
+      "title": "veloGB10 v0.7.0 RELEASE - Qwen3.8-Flash-Next TP=2 @ 186 tok/sec , SINGLE at 137 tok/sec on code - #80 by stav_kats - DGX Spark / GB10 Projects - NVIDIA Developer Forums",
+      "text_chars": 881,
+      "notice": "Unfortunately, your browser is unsupported.",
+      "unsupported": true
+    }
+  ]
+}
