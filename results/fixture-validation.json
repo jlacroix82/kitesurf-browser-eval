@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-14T19:32:38.705Z",
+  "upstream_revision": "4a2903813a22b08d4f3cc64a4b35339d0293a5d1",
+  "environment": {
+    "platform": "linux",
+    "arch": "arm64",
+    "node": "v24.22.2",
+    "puppeteer": "25.17.0"
+  },
+  "method": {
+    "rounds": 1,
+    "wait_until": "domcontentloaded",
+    "settle_ms": 700,
+    "navigation_timeout_ms": 20000,
+    "case_timeout_note": "protocol calls limited to 20s; runner should also be externally bounded",
+    "fresh_page_per_case": true,
+    "order": "alternating engine first each round; identical case order",
+    "timing": "page creation through extraction and assertions; screenshots separately",
+    "quality": "predeclared marker recall + structural extraction; not semantic answer quality; failed/error cases retained"
+  },
+  "rows": [
+    {
+      "engine": "kitesurf",
+      "round": 1,
+      "case": "fixture",
+      "url": null,
+      "version": "Chrome/145.0.0.0",
+      "expected": [
+        "READY",
+        "Hello Ada",
+        "ASYNC_DONE",
+        "Orchid",
+        "17",
+        "Cedar",
+        "29",
+        "quality-fixture",
+        "violet-42"
+      ],
+      "title": "Evaluation fixture",
+      "text_chars": 197,
+      "main_chars": 180,
+      "text_sha256": "aac728141ec11581d7d751c315eb1c3ded5328e697c1ca14130f4ef2a515cfa9",
+      "marker_results": [
+        {
+          "marker": "READY",
+          "found": true
+        },
+        {
+          "marker": "Hello Ada",
+          "found": true
+        },
+        {
+          "marker": "ASYNC_DONE",
+          "found": true
+        },
+        {
+          "marker": "Orchid",
+          "found": true
+        },
+        {
+          "marker": "17",
+          "found": true
+        },
+        {
+          "marker": "Cedar",
+          "found": true
+        },
+        {
+          "marker": "29",
+          "found": true
+        },
+        {
+          "marker": "quality-fixture",
+          "found": true
+        },
+        {
+          "marker": "violet-42",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 2,
+      "tables": 1,
+      "code_blocks": 1,
+      "links": 1,
+      "challenge_hint": false,
+      "fixture_checks": {
+        "heading": true,
+        "table": true,
+        "code": true,
+        "link": true,
+        "interaction": true,
+        "expanded": true,
+        "async": true
+      },
+      "fixture_pass": true,
+      "elapsed_ms": 1627
+    },
+    {
+      "engine": "chromium",
+      "round": 1,
+      "case": "fixture",
+      "url": null,
+      "version": "Chrome/157.0.8103.38",
+      "expected": [
+        "READY",
+        "Hello Ada",
+        "ASYNC_DONE",
+        "Orchid",
+        "17",
+        "Cedar",
+        "29",
+        "quality-fixture",
+        "violet-42"
+      ],
+      "title": "Evaluation fixture",
+      "text_chars": 198,
+      "main_chars": 181,
+      "text_sha256": "5145cdc995f80bd1daa506c519c1ae8157a9d9fd7c3ccc430793cbe50209f9f6",
+      "marker_results": [
+        {
+          "marker": "READY",
+          "found": true
+        },
+        {
+          "marker": "Hello Ada",
+          "found": true
+        },
+        {
+          "marker": "ASYNC_DONE",
+          "found": true
+        },
+        {
+          "marker": "Orchid",
+          "found": true
+        },
+        {
+          "marker": "17",
+          "found": true
+        },
+        {
+          "marker": "Cedar",
+          "found": true
+        },
+        {
+          "marker": "29",
+          "found": true
+        },
+        {
+          "marker": "quality-fixture",
+          "found": true
+        },
+        {
+          "marker": "violet-42",
+          "found": true
+        }
+      ],
+      "all_markers": true,
+      "headings": 2,
+      "tables": 1,
+      "code_blocks": 1,
+      "links": 1,
+      "challenge_hint": false,
+      "fixture_checks": {
+        "heading": true,
+        "table": true,
+        "code": true,
+        "link": true,
+        "interaction": true,
+        "expanded": true,
+        "async": true
+      },
+      "fixture_pass": true,
+      "elapsed_ms": 938
+    }
+  ]
+}

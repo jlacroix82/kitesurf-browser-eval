@@ -1,0 +1,73 @@
+{
+  "note": "Historical smoke; public projection excludes text snippets and private profile paths. Failed stale example.com marker retained. Timings include screenshots. Current harness is a subsequent expanded implementation, not the original generator.",
+  "rows": [
+    {
+      "engine": "kitesurf",
+      "name": "fixture",
+      "pass": true,
+      "elapsed_ms": 1121,
+      "text_chars": 21,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "kitesurf",
+      "name": "example",
+      "pass": false,
+      "elapsed_ms": 2191,
+      "text_chars": 917,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "kitesurf",
+      "name": "python",
+      "pass": true,
+      "elapsed_ms": 2123,
+      "text_chars": 26887,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "kitesurf",
+      "name": "github",
+      "pass": true,
+      "elapsed_ms": 19313,
+      "text_chars": 15993,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "chromium",
+      "setup_error": "Initial Chromium default profile setup failed; rerun used explicit isolated userDataDir."
+    },
+    {
+      "engine": "chromium",
+      "name": "fixture",
+      "pass": true,
+      "elapsed_ms": 333,
+      "text_chars": 21,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "chromium",
+      "name": "example",
+      "pass": false,
+      "elapsed_ms": 320,
+      "text_chars": 917,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "chromium",
+      "name": "python",
+      "pass": true,
+      "elapsed_ms": 509,
+      "text_chars": 26911,
+      "screenshot": "saved"
+    },
+    {
+      "engine": "chromium",
+      "name": "github",
+      "pass": true,
+      "elapsed_ms": 2091,
+      "text_chars": 14559,
+      "screenshot": "saved"
+    }
+  ]
+}

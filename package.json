@@ -1,0 +1,9 @@
+{
+  "name": "kitesurf-browser-eval",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Independent Kitesurf and Chromium CDP smoke and extraction evaluation",
+  "license": "MIT",
+  "scripts": {"test": "node scripts/evaluate.cjs"},
+  "dependencies": {"puppeteer-core": "25.17.0"}
+}
